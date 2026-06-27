@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0D0D0D;
@@ -20,7 +23,7 @@
         }
     </style>
 </head>
-<body class="text-white min-h-screen flex flex-col justify-between p-6 overflow-hidden selection:bg-white/20">
+<body class="text-white min-h-screen flex flex-col justify-between p-6 overflow-x-hidden selection:bg-white/20">
 
     <!-- Top Navigation Layer -->
     <header class="w-full max-w-7xl mx-auto flex items-center justify-between z-50 fixed top-6 left-1/2 -translate-x-1/2 px-6">
@@ -37,11 +40,11 @@
             <a href="#about" class="px-5 py-1.5 text-xs font-medium text-neutral-400 hover:text-white transition-all duration-200">About</a>
         </nav>
 
-        <!-- Right Utility Links -->
+        <!-- Right Utility Links (Now Active) -->
         <div class="flex items-center gap-6 text-xs text-neutral-400 font-medium">
-            <a href="#" class="hover:text-white transition-colors duration-200 flex items-center gap-0.5">GitHub <span class="text-[10px]">↗</span></a>
-            <a href="#" class="hover:text-white transition-colors duration-200 flex items-center gap-0.5">LinkedIn <span class="text-[10px]">↗</span></a>
-            <a href="#" class="hover:text-white transition-colors duration-200 flex items-center gap-0.5">Resume <span class="text-[10px]">↗</span></a>
+            <a href="https://github.com/prajwalneupane494" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-200 flex items-center gap-0.5">GitHub <span class="text-[10px]">↗</span></a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-200 flex items-center gap-0.5">LinkedIn <span class="text-[10px]">↗</span></a>
+            <a href="YOUR_RESUME_URL" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors duration-200 flex items-center gap-0.5">Resume <span class="text-[10px]">↗</span></a>
         </div>
     </header>
 
@@ -85,10 +88,10 @@
                         <p class="text-neutral-500">Specializing in signal processing, wireless networks, and microcontrollers.</p>
                     </div>
                     
-                    <!-- Micro Scroll Arrow -->
-                    <div class="text-neutral-500 text-sm font-mono animate-bounce mr-2 hidden md:block">
+                    <!-- Micro Scroll Arrow Link -->
+                    <a href="#projects" class="text-neutral-500 hover:text-white transition-colors duration-200 text-sm font-mono animate-bounce mr-2 hidden md:block">
                         [compile_projects] ↓
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -96,6 +99,11 @@
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.02),transparent_50%)] pointer-events-none"></div>
         </div>
     </main>
+
+    <!-- Content Sections for Navigation (Placeholder for smooth scroll target) -->
+    <div id="projects" class="h-16"></div>
+    <div id="skills" class="h-16"></div>
+    <div id="about" class="h-16"></div>
 
     <!-- Footer Space Holder -->
     <footer class="w-full text-center py-2 text-[10px] text-neutral-600 pointer-events-none font-mono">
