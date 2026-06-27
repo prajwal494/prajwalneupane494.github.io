@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prajwal Neupane | Electronics, Information & Telecommunication Portfolio</title>
-    <!-- Tailwind CSS Engine -->
+    <!-- Tailwind CSS Script -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome Vector Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
-        // Inline Theme Controller
-        if (localStorage.getItem('theme') === 'light') {
+        // Synchronous layout configuration prevents theme flicker during initialization
+        if (localStorage.getItem('engineering-theme') === 'light') {
             document.documentElement.classList.add('light');
         }
     </script>
     <style>
-        /* Smooth color transitions for light/dark shift */
-        body { transition: background-color 0.3s ease, color 0.3s ease; }
+        body { transition: background-color 0.25s ease, color 0.25s ease; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 dark:bg-slate-900 dark:text-slate-100 light:bg-slate-50 light:text-slate-800 font-sans antialiased selection:bg-cyan-500 selection:text-slate-900">
+<body class="bg-slate-950 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-50 light:text-slate-800 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-    <!-- Navbar Wrapper -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 dark:bg-slate-900/80 light:bg-white/80 border-b border-slate-800 dark:border-slate-800 light:border-slate-200">
+    <!-- Sticky Navigation Interface -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 dark:bg-slate-950/80 light:bg-white/80 border-b border-slate-900 dark:border-slate-900 light:border-slate-200">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-mono font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">prajwal.dev</a>
+            <a href="#" class="text-xl font-mono font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent tracking-tight">prajwal.dev</a>
             
             <div class="flex items-center gap-6">
                 <nav class="hidden sm:flex gap-6 text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600">
@@ -34,23 +33,23 @@
                     <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
                 </nav>
                 
-                <!-- Theme Toggle Button -->
-                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-800 dark:bg-slate-800 light:bg-slate-200 hover:ring-2 hover:ring-cyan-400 transition-all text-sm cursor-pointer" aria-label="Toggle Theme">
-                    <i id="theme-icon" class="fas fa-sun text-amber-400 dark:text-amber-400 light:text-indigo-600 light:fa-moon"></i>
+                <!-- System Link State Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-900 dark:bg-slate-900 light:bg-slate-200 border border-slate-800 dark:border-slate-800 light:border-slate-300 hover:ring-2 hover:ring-cyan-400 transition-all text-sm cursor-pointer" aria-label="Toggle System Layout">
+                    <i id="theme-icon" class="fas fa-sun text-amber-400 dark:text-amber-400 light:text-blue-600"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Main Container -->
+    <!-- Main Container Layout -->
     <main class="max-w-5xl mx-auto px-6 py-12 space-y-24">
 
-        <!-- Hero Presentation -->
+        <!-- Core Hero Presentation Block -->
         <section id="about" class="py-12 md:py-24 space-y-6">
             <div class="space-y-3">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
                     <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                    Available for Projects
+                    System Online
                 </div>
                 <h1 class="text-4xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white light:text-slate-900">
                     Hi, I'm <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Prajwal Neupane</span>.
@@ -60,204 +59,205 @@
                 </p>
             </div>
             <p class="text-base md:text-lg text-slate-400 dark:text-slate-400 light:text-slate-600 max-w-3xl leading-relaxed">
-                I map engineering problems to concrete logic layers. My active development spans across RF wave transmission properties, physical embedded processor layouts, and optimal data structure design in automated intelligent agents.
+                I map hardware design configurations and structural communications protocols directly to robust software logic. My development matrix centers around radio frequency link calculations, physical layer layout debugging, and optimal processing pipelines in intelligent networks.
             </p>
             <div class="flex flex-wrap gap-4 pt-4">
-                <a href="https://github.com/prajwal494" target="_blank" class="px-5 py-2.5 bg-slate-800 dark:bg-slate-800 light:bg-slate-200 border border-slate-700 dark:border-slate-700 light:border-slate-300 text-slate-100 dark:text-slate-100 light:text-slate-800 rounded-lg font-medium transition-all flex items-center gap-2 hover:bg-slate-700 dark:hover:bg-slate-700 light:hover:bg-slate-300">
+                <a href="https://github.com/prajwal494" target="_blank" class="px-5 py-2.5 bg-slate-900 dark:bg-slate-900 light:bg-slate-200 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-100 dark:text-slate-100 light:text-slate-800 rounded-lg font-medium transition-all flex items-center gap-2 hover:bg-slate-800/80">
                     <i class="fab fa-github text-lg"></i> Engineering Log
                 </a>
-                <a href="#contact" class="px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 dark:text-slate-950 light:text-white font-bold rounded-lg transition-all shadow-lg shadow-cyan-500/10 hover:opacity-90">
-                    Establish Link
+                <a href="#contact" class="px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 dark:text-slate-950 light:text-white font-bold rounded-lg transition-all shadow-lg shadow-cyan-500/10 hover:opacity-95">
+                    Open Interconnect
                 </a>
             </div>
         </section>
 
-        <!-- Skill Matrices Component -->
+        <!-- Skill Disciplinary Distribution -->
         <section id="toolkit" class="space-y-8 scroll-mt-20">
             <div class="border-l-4 border-cyan-500 pl-4">
-                <h2 class="text-2xl font-bold text-slate-900 dark:text-white light:text-slate-900">System Toolkit</h2>
-                <p class="text-slate-400 dark:text-slate-400 light:text-slate-500 text-sm">Discipline distribution and stack layers.</p>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white light:text-slate-900">Engineering Frameworks</h2>
+                <p class="text-slate-400 dark:text-slate-400 light:text-slate-500 text-sm">Hardware layout and signal processing architectures.</p>
             </div>
             
             <div class="grid sm:grid-cols-3 gap-6">
-                <div class="bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 p-6 rounded-xl space-y-3">
+                <!-- Telecom Domain Block -->
+                <div class="bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 p-6 rounded-xl space-y-3 shadow-sm">
                     <div class="text-cyan-400 text-xl"><i class="fas fa-satellite-dish"></i></div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 light:text-slate-800">Telecommunication</h3>
-                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">Antenna array geometry, wave resonance, modulation metrics, and signal integrity layouts.</p>
+                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">Antenna element arrays, wave propagation configurations, modulation metrics, and RF network topology tracing.</p>
                 </div>
-                <div class="bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 p-6 rounded-xl space-y-3">
+                <!-- Electronics Domain Block -->
+                <div class="bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 p-6 rounded-xl space-y-3 shadow-sm">
                     <div class="text-blue-400 text-xl"><i class="fas fa-microchip"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 light:text-slate-800">Electronics</h3>
-                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">8051 Microcontroller interfacing, hardware register control patterns, and low-level Assembly configurations.</p>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 light:text-slate-800">Electronics Engineering</h3>
+                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">8051 architectural logic mapping, low-level microchip register manipulation, and robust system Assembly structures.</p>
                 </div>
-                <div class="bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 p-6 rounded-xl space-y-3">
-                    <div class="text-indigo-400 text-xl"><i class="fas fa-brain"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 light:text-slate-800">Information & AI</h3>
-                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">Deterministic script designs, graph pathfinding iterations (BFS/DFS), and algorithmic structured data processing.</p>
+                <!-- Information/Software Domain Block -->
+                <div class="bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 p-6 rounded-xl space-y-3 shadow-sm">
+                    <div class="text-indigo-400 text-xl"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 light:text-slate-800">Information Systems</h3>
+                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">Algorithmic agent optimization metrics, discrete pathfinding logic loops (BFS/DFS), and clean data parsing frameworks.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Advanced Filterable Projects Component -->
+        <!-- Advanced Filterable Functional Implementations Matrix -->
         <section id="projects" class="space-y-8 scroll-mt-20">
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-l-4 border-cyan-500 pl-4">
                 <div>
-                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white light:text-slate-900">Technical Projects</h2>
-                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-500 text-sm">Filter through implementations across engineering streams.</p>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white light:text-slate-900">Technical Implementations</h2>
+                    <p class="text-slate-400 dark:text-slate-400 light:text-slate-500 text-sm">Isolate project nodes across targeted engineering vectors.</p>
                 </div>
                 
-                <!-- Category Filter Buttons -->
+                <!-- Action Navigation Triggers -->
                 <div class="flex flex-wrap gap-2 text-xs font-mono">
-                    <button onclick="filterProjects('all')" id="btn-all" class="px-3 py-1.5 rounded-md bg-cyan-500 text-slate-950 font-bold shadow-sm cursor-pointer transition-all">All</button>
-                    <button onclick="filterProjects('telecom')" id="btn-telecom" class="px-3 py-1.5 rounded-md bg-slate-800 dark:bg-slate-800 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all">Telecom</button>
-                    <button onclick="filterProjects('electronics')" id="btn-electronics" class="px-3 py-1.5 rounded-md bg-slate-800 dark:bg-slate-800 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all">Electronics</button>
-                    <button onclick="filterProjects('software')" id="btn-software" class="px-3 py-1.5 rounded-md bg-slate-800 dark:bg-slate-800 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all">Software/AI</button>
+                    <button onclick="applyDisciplineFilter('all')" id="trigger-all" class="px-3 py-1.5 rounded-md bg-cyan-500 text-slate-950 font-bold shadow-sm cursor-pointer transition-all">All</button>
+                    <button onclick="applyDisciplineFilter('telecom')" id="trigger-telecom" class="px-3 py-1.5 rounded-md bg-slate-900 dark:bg-slate-900 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all">Telecom</button>
+                    <button onclick="applyDisciplineFilter('electronics')" id="trigger-electronics" class="px-3 py-1.5 rounded-md bg-slate-900 dark:bg-slate-900 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all">Electronics</button>
+                    <button onclick="applyDisciplineFilter('information')" id="trigger-information" class="px-3 py-1.5 rounded-md bg-slate-900 dark:bg-slate-900 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all">Information</button>
                 </div>
             </div>
 
-            <!-- Project Grid Containers -->
+            <!-- Deployment Module Target Configurations -->
             <div class="grid gap-6">
-                <!-- Project card 1 -->
-                <div class="project-card bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 p-6 md:p-8 rounded-xl hover:border-cyan-500/40 transition-all space-y-4" data-category="telecom">
+                <!-- Node Entry 1 -->
+                <div class="node-card bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 p-6 md:p-8 rounded-xl hover:border-cyan-500/40 transition-all space-y-4 shadow-sm" data-discipline="telecom">
                     <div class="flex justify-between items-start flex-wrap gap-2">
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white light:text-slate-900">5-Element Yagi-Uda Antenna Modeling</h3>
-                        <span class="text-xs font-mono px-2.5 py-1 bg-slate-800 dark:bg-slate-800 light:bg-slate-100 text-cyan-500 border border-slate-700 dark:border-slate-700 light:border-slate-200 rounded">Telecommunication</span>
+                        <span class="text-xs font-mono px-2.5 py-1 bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-cyan-400 border border-slate-850 dark:border-slate-850 light:border-slate-200 rounded">Telecom Link</span>
                     </div>
                     <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">
-                        Calculated physical lengths and separation values for elements configured at 100 MHz parameters. Optimized antenna front-to-back pattern response margins by processing exact mathematical wavelength tracking metrics.
+                        Modeled physical deployment tracking parameters optimized for a 100 MHz target frequency line. Iterated architectural element array separations and calculated path tracking gain configurations to verify stable front-to-back link efficiency charts.
                     </p>
                     <div class="flex flex-wrap gap-3 text-xs font-mono text-slate-500">
-                        <span class="text-cyan-400"><i class="fas fa-hashtag"></i> RF-Design</span>
-                        <span><i class="fas fa-tag"></i> WavePropagation</span>
+                        <span class="text-cyan-400"><i class="fas fa-network-wired"></i> RF-Calculations</span>
+                        <span><i class="fas fa-wave-square"></i> WaveResonance</span>
                     </div>
                 </div>
 
-                <!-- Project card 2 -->
-                <div class="project-card bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 p-6 md:p-8 rounded-xl hover:border-cyan-500/40 transition-all space-y-4" data-category="software">
+                <!-- Node Entry 2 -->
+                <div class="node-card bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 p-6 md:p-8 rounded-xl hover:border-cyan-500/40 transition-all space-y-4 shadow-sm" data-discipline="information">
                     <div class="flex justify-between items-start flex-wrap gap-2">
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white light:text-slate-900">Intelligent Search & State-Space Engine</h3>
-                        <span class="text-xs font-mono px-2.5 py-1 bg-slate-800 dark:bg-slate-800 light:bg-slate-100 text-indigo-400 border border-slate-700 dark:border-slate-700 light:border-slate-200 rounded">Information Systems</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white light:text-slate-900">Deterministic Search & Agent Optimization</h3>
+                        <span class="text-xs font-mono px-2.5 py-1 bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-indigo-400 border border-slate-850 dark:border-slate-850 light:border-slate-200 rounded">Information Logic</span>
                     </div>
                     <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">
-                        Built functional code abstractions modeling automated problem-solving paths. Programmed Depth-First Search (DFS) and Breadth-First Search (BFS) routing algorithms within a performance comparison engine.
+                        Engineered structural software models managing automated decision boundaries. Configured tracking tests evaluating Depth-First Search (DFS) and Breadth-First Search (BFS) graph pathfinding parameters under fluctuating space constraints.
                     </p>
                     <div class="flex flex-wrap gap-3 text-xs font-mono text-slate-500">
-                        <span class="text-indigo-400"><i class="fas fa-hashtag"></i> PythonAI</span>
-                        <span><i class="fas fa-tag"></i> StateOptimization</span>
+                        <span class="text-indigo-400"><i class="fas fa-terminal"></i> PythonAI</span>
+                        <span><i class="fas fa-sitemap"></i> StateSpaceAnalysis</span>
                     </div>
                 </div>
 
-                <!-- Project card 3 -->
-                <div class="project-card bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 p-6 md:p-8 rounded-xl hover:border-cyan-500/40 transition-all space-y-4" data-category="electronics">
+                <!-- Node Entry 3 -->
+                <div class="node-card bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 p-6 md:p-8 rounded-xl hover:border-cyan-500/40 transition-all space-y-4 shadow-sm" data-discipline="electronics">
                     <div class="flex justify-between items-start flex-wrap gap-2">
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white light:text-slate-900">8051 Microcontroller Interfacing Platform</h3>
-                        <span class="text-xs font-mono px-2.5 py-1 bg-slate-800 dark:bg-slate-800 light:bg-slate-100 text-blue-400 border border-slate-700 dark:border-slate-700 light:border-slate-200 rounded">Electronics</span>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white light:text-slate-900">8051 Register Interface Configurations</h3>
+                        <span class="text-xs font-mono px-2.5 py-1 bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-blue-400 border border-slate-850 dark:border-slate-850 light:border-slate-200 rounded">Hardware Logic</span>
                     </div>
                     <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm leading-relaxed">
-                        Executed precise interrupt vector operations and peripheral timing tasks by coding directly in 8051 Assembly. Tied peripheral hardware structures cleanly into main operational looping scripts.
+                        Constructed stable operational firmware control blocks handling hardware-to-peripheral interrupt signals. Programmed register configurations using direct Assembly code matrices to synchronize logic execution pipelines.
                     </p>
                     <div class="flex flex-wrap gap-3 text-xs font-mono text-slate-500">
-                        <span class="text-blue-400"><i class="fas fa-hashtag"></i> Assembly</span>
-                        <span><i class="fas fa-tag"></i> MicrocontrollerFirmware</span>
+                        <span class="text-blue-400"><i class="fas fa-microchip"></i> 8051Architecture</span>
+                        <span><i class="fas fa-memory"></i> LowLevelFirmware</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Communication Module (Contact Form) -->
-        <section id="contact" class="max-w-xl mx-auto bg-slate-850 dark:bg-slate-850 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 scroll-mt-20">
+        <!-- Communication Module Integration -->
+        <section id="contact" class="max-w-xl mx-auto bg-slate-900 dark:bg-slate-900 light:bg-white border border-slate-850 dark:border-slate-850 light:border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 shadow-sm scroll-mt-20">
             <div class="text-center space-y-2">
-                <h2 class="text-2xl font-bold text-slate-900 dark:text-white light:text-slate-900">Initialize Interconnection</h2>
-                <p class="text-slate-400 dark:text-slate-400 light:text-slate-500 text-sm">Drop a line to open communication pipelines.</p>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white light:text-slate-900">Initialize Up-Link</h2>
+                <p class="text-slate-400 dark:text-slate-400 light:text-slate-500 text-sm font-sans">Open data transmission ports for professional collaboration.</p>
             </div>
             
             <form action="https://formspree.io/f/your_id_here" method="POST" class="space-y-4 text-sm font-mono">
                 <div class="space-y-1">
-                    <label class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-xs">IDENTIFIER / NAME</label>
-                    <input type="text" name="name" required class="w-full bg-slate-900 dark:bg-slate-900 light:bg-slate-50 border border-slate-700 dark:border-slate-700 light:border-slate-300 p-2.5 rounded-lg text-slate-100 dark:text-slate-100 light:text-slate-800 focus:outline-none focus:ring-1 focus:ring-cyan-400">
+                    <label class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-xs tracking-wider">SOURCE IDENTIFIER (NAME)</label>
+                    <input type="text" name="name" required class="w-full bg-slate-950 dark:bg-slate-950 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 p-3 rounded-lg text-slate-100 dark:text-slate-100 light:text-slate-800 focus:outline-none focus:ring-1 focus:ring-cyan-400">
                 </div>
                 <div class="space-y-1">
-                    <label class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-xs">GATEWAY EMAIL</label>
-                    <input type="email" name="email" required class="w-full bg-slate-900 dark:bg-slate-900 light:bg-slate-50 border border-slate-700 dark:border-slate-700 light:border-slate-300 p-2.5 rounded-lg text-slate-100 dark:text-slate-100 light:text-slate-800 focus:outline-none focus:ring-1 focus:ring-cyan-400">
+                    <label class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-xs tracking-wider">GATEWAY ADDRESS (EMAIL)</label>
+                    <input type="email" name="email" required class="w-full bg-slate-950 dark:bg-slate-950 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 p-3 rounded-lg text-slate-100 dark:text-slate-100 light:text-slate-800 focus:outline-none focus:ring-1 focus:ring-cyan-400">
                 </div>
                 <div class="space-y-1">
-                    <label class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-xs">DATA PAYLOAD / MESSAGE</label>
-                    <textarea name="message" rows="4" required class="w-full bg-slate-900 dark:bg-slate-900 light:bg-slate-50 border border-slate-700 dark:border-slate-700 light:border-slate-300 p-2.5 rounded-lg text-slate-100 dark:text-slate-100 light:text-slate-800 focus:outline-none focus:ring-1 focus:ring-cyan-400 resize-none"></textarea>
+                    <label class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-xs tracking-wider">DATA STRING (MESSAGE PAYLOAD)</label>
+                    <textarea name="message" rows="4" required class="w-full bg-slate-950 dark:bg-slate-950 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 p-3 rounded-lg text-slate-100 dark:text-slate-100 light:text-slate-800 focus:outline-none focus:ring-1 focus:ring-cyan-400 resize-none"></textarea>
                 </div>
-                <button type="submit" class="w-full py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-lg font-sans shadow-md cursor-pointer transition-all">
-                    Transmit Packet <i class="fas fa-paper-plane ml-1 text-xs"></i>
+                <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold rounded-lg font-sans shadow-md hover:opacity-95 cursor-pointer transition-all">
+                    Transmit Packet <i class="fas fa-satellite ml-1 text-xs animate-bounce"></i>
                 </button>
             </form>
         </section>
     </main>
 
-    <!-- Scroll to Top UI Utility -->
-    <button id="scroll-top" class="fixed bottom-6 right-6 p-3 rounded-full bg-slate-800 dark:bg-slate-800 light:bg-slate-200 border border-slate-700 dark:border-slate-700 light:border-slate-300 text-slate-400 dark:text-slate-400 light:text-slate-600 opacity-0 pointer-events-none transition-all hover:text-cyan-400 cursor-pointer shadow-lg z-50" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
+    <!-- Scroll Context Indicator Hook -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 p-3 rounded-full bg-slate-900 dark:bg-slate-900 light:bg-slate-200 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-400 dark:text-slate-400 light:text-slate-600 opacity-0 pointer-events-none transition-all hover:text-cyan-400 cursor-pointer shadow-xl z-50" aria-label="Reset Interface Position">
+        <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Footer Structural Element -->
-    <footer class="border-t border-slate-800 dark:border-slate-800 light:border-slate-200 py-8 text-center text-xs text-slate-500 font-mono">
-        <p>&copy; 2026 Prajwal Neupane. System builds optimized with clean semantic layouts.</p>
+    <!-- Base Configuration Footer -->
+    <footer class="border-t border-slate-900 dark:border-slate-900 light:border-slate-200 py-8 text-center text-xs text-slate-500 font-mono">
+        <p>&copy; 2026 Prajwal Neupane. System architecture fully verified.</p>
     </footer>
 
-    <!-- Core Runtime Logic Components (Filters, Theme, Scroll) -->
+    <!-- Execution Sub-Routines Engine -->
     <script>
-        // 1. Project Filter Matrix Logic
-        function filterProjects(category) {
-            const cards = document.querySelectorAll('.project-card');
-            const buttons = document.querySelectorAll('#projects button');
+        // Sub-Routine A: Filtering Algorithms
+        function applyDisciplineFilter(discipline) {
+            const structures = document.querySelectorAll('.node-card');
+            const selectors = document.querySelectorAll('#projects button');
             
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
+            structures.forEach(node => {
+                if (discipline === 'all' || node.getAttribute('data-discipline') === discipline) {
+                    node.style.display = 'block';
                 } else {
-                    card.style.display = 'none';
+                    node.style.display = 'none';
                 }
             });
 
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-cyan-500', 'text-slate-950', 'font-bold');
-                btn.classList.add('bg-slate-800', 'dark:bg-slate-800', 'light:bg-slate-200', 'text-slate-400', 'dark:text-slate-400', 'light:text-slate-600');
+            selectors.forEach(button => {
+                button.className = "px-3 py-1.5 rounded-md bg-slate-900 dark:bg-slate-900 light:bg-slate-200 text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-cyan-400 cursor-pointer transition-all";
             });
 
-            const activeBtn = document.getElementById(`btn-${category}`);
-            if (activeBtn) {
-                activeBtn.classList.remove('bg-slate-800', 'dark:bg-slate-800', 'light:bg-slate-200', 'text-slate-400', 'dark:text-slate-400', 'light:text-slate-600');
-                activeBtn.classList.add('bg-cyan-500', 'text-slate-950', 'font-bold');
+            const activeSelector = document.getElementById(`trigger-${discipline}`);
+            if (activeSelector) {
+                activeSelector.className = "px-3 py-1.5 rounded-md bg-cyan-500 text-slate-950 font-bold shadow-sm cursor-pointer transition-all";
             }
         }
 
-        // 2. Theme Switching Logic
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
+        // Sub-Routine B: Layout State Interfacing
+        const structuralSwitcher = document.getElementById('theme-toggle');
+        const visualIndicator = document.getElementById('theme-icon');
 
-        themeToggle.addEventListener('click', () => {
-            const isLight = document.documentElement.classList.toggle('light');
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        structuralSwitcher.addEventListener('click', () => {
+            const lightTargetActive = document.documentElement.classList.toggle('light');
+            localStorage.setItem('engineering-theme', lightTargetActive ? 'light' : 'dark');
             
-            if (isLight) {
-                themeIcon.className = "fas fa-moon text-indigo-600";
+            if (lightTargetActive) {
+                visualIndicator.className = "fas fa-moon text-blue-600";
             } else {
-                themeIcon.className = "fas fa-sun text-amber-400";
+                visualIndicator.className = "fas fa-sun text-amber-400";
             }
         });
 
-        // Sync initial state of icon
+        // Initialize state configuration match
         if (document.documentElement.classList.contains('light')) {
-            themeIcon.className = "fas fa-moon text-indigo-600";
+            visualIndicator.className = "fas fa-moon text-blue-600";
         }
 
-        // 3. Scroll Utility Indicator Logic
-        const scrollTopBtn = document.getElementById('scroll-top');
+        // Sub-Routine C: Scroll Position Utilities
+        const navigationHook = document.getElementById('scroll-to-top');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            if (window.scrollY > 400) {
+                navigationHook.classList.remove('opacity-0', 'pointer-events-none');
             } else {
-                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                navigationHook.classList.add('opacity-0', 'pointer-events-none');
             }
         });
-        scrollTopBtn.addEventListener('click', () => {
+        navigationHook.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
